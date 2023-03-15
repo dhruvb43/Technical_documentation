@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page
+    </title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        nav {
+            display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+        }
+        #navbar{
+            position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+        }
+        h1 {
+            margin: 10px;
+            font-size: xx-large;
+            text-align: center;
+            text-decoration: underline;
+        }
+        body{
+            line-height: 1.5; 
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav id="navbar">
+        
+        <header>
+            <h1 class="dhr" > C LANGUAGE</h1>
+        </header><div class="dhruv">
+        <ul>
+            
+            <li> <a class="nav-link" href="#INTRO">INTRO</a></li>
+            <li> <a class="nav-link" href="#SYNTAX">SYNTAX</a></li>
+            <li> <a class="nav-link" href="#C_OUTPUTS">C_OUTPUTS</a></li>
+            <li> <a class="nav-link" href="#C_VARIABLES">C_VARIABLES</a></li>
+            <li> <a class="nav-link" href="#C_OPERATORS">C_OPERATORS</a></li>
+            <li> <a class="nav-link" href="#C_CONSTANTS">C_CONSTANTS</a></li>
+            <li><a class="nav-link" href="#REFERENCE">REFERENCE</a></li>
+
+        </ul>
+    </nav></div>
+    
+    <main id="main-doc">
+        <section class="main-section" id="INTRO">
+            <header class="dhru"> INTRO</header>
+            <article>
+                <p>
+                <ul>
+                    <li>
+                        <h3>What_is_C?</h3>
+                        <p>
+                            It is a very popular language, despite being old.
+
+                            C is strongly associated with UNIX, as it was developed to write the UNIX operating system.
+                        </p>
+
+                    </li>
+                    <p>
+                    <h4>Why_Learn_C?</h4><br>
+                    It is one of the most popular programming language in the world <br>
+                    If you know C, you will have no problem learning other popular programming languages such as Java,
+                    Python, C++, C#, etc, as the syntax is similar <br>
+                    C is very fast, compared to other programming languages, like Java and Python <br>
+                    C is very versatile; it can be used in both applications and technologies
+                    </p>
+                </ul>
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="SYNTAX">
+            <header class="dhru">SYNTAX</header>
+            <article>
+                <p>
+                <ul>
+
+                    <h3>Syntax_</h3>
+                    <li>You have already seen the following code a couple of times in the first chapters. Let's break it
+                        down to understand it better:</li><br>
+                    <h4>Example</h4>
+                    <code>
+          #include <stdio.h> <br>
+
+            int main() { <br>
+              printf("Hello World!");<br>
+              return 0;<br>
+            }  </code>
+                </ul>
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="C_OUTPUTS">
+            <header class="dhru">C_OUTPUTS</header>
+            <article>
+                <p>
+                <ul>
+
+                    <p>To output values or print text in C, you can use the printf() function:</p>
+                    <li>
+                        <h4>Example</h4>
+                    </li>
+                    #include <stdio.h> <br>
+
+                        int main() { <br>
+                        printf("Hello World!"); <br>
+                        return 0; <br>
+                        }
+                        <p>You can use as many printf() functions as you want. However, note that it does not insert a
+                            new line at the end of the output:</p>
+                </ul>
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="C_VARIABLES">
+            <header class="dhru">C_VARIABLES</header>
+            <article>
+
+                <ul>
+                    <li>Variables_are_containers_for storing data values,_like_numbers_and characters.</li>
+                    <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                    <li>float - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                    <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="C_OPERATORS">
+            <header class="dhru">C_OPERATORS</header>
+            <article>
+                <ul>
+                    <p>Operators are used to perform operations on variables and values.</p>
+                    <p>In the example below, we use the + operator to add together two values:
+                    </p>
+                    <li>
+                        <h4>Example_</h4>
+                    </li>
+                    <p>int myNum = 100 + 50;</p>
+                    <h4>
+                        C divides the operators into the following groups:
+                    </h4>
+                    <ul>
+                        <li>Arithmetic operators</li>
+                        <li>Assignment operators</li>
+                        <li>Comparison operators</li>
+                        <li>Logical operators</li>
+                        <li>Bitwise operators</li>
+                        <img src="download.jpg" alt="img">
+                    </ul>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="C_CONSTANTS">
+            <header class="dhru">C_CONSTANTS</header>
+            <article>
+                <ul>
+                    <p>If you don't want others (or yourself) to change existing variable values, you can use the const
+                        keyword.</p>
+                    <p>This will declare the variable as "constant", which means unchangeable and read-only:</p>
+                    <ul>
+                        <h5>_Example</h5>
+                        <code>const int myNum = 15; 
+                     </code>
+                        <code> const float mynum = 16.0;</code>
+                        <code>const str my num = dh</code>
+                        <code>const double mynum = pi=3.1473333333</code>
+                    </ul>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section " id="REFERENCE">
+
+            <header class="dhru">REFERENCE</header>
+            <article>
+                <li>
+                    <p>All the documentation in this page is taken from <a
+                            href="https://www.w3schools.com/c/c_intro.php"><h2>C_LANGUAGE___</h2></a> </p>
+                </li>3
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>
